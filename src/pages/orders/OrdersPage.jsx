@@ -1,10 +1,15 @@
 import { Link } from 'react-router';
 import Header from '../../components/Header';
 import './OrdersPage.css';
+import atleticCottonSocks6 from '../../assets/images/products/athletic-cotton-socks-6-pairs.jpg';
+import buyAgain from '../../assets/images/icons/buy-again.png';
+import interCompoBaseball from '../../assets/images/products/intermediate-composite-basketball.jpg';
+import adultsPlainCotton2 from '../../assets/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg';
 
 export default function OrdersPage() {
     return (
         <>
+            <link rel='icon' type='image/svg+xml' href='/orders-favicon.png' />
             <title>Orders</title>
             <Header />
             <div className='orders-page'>
@@ -38,7 +43,7 @@ export default function OrdersPage() {
 
                         <div className='order-details-grid'>
                             <div className='product-image-container'>
-                                <img src='images/products/athletic-cotton-socks-6-pairs.jpg' />
+                                <img src={atleticCottonSocks6} />
                             </div>
 
                             <div className='product-details'>
@@ -55,7 +60,7 @@ export default function OrdersPage() {
                                 <button className='buy-again-button button-primary'>
                                     <img
                                         className='buy-again-icon'
-                                        src='images/icons/buy-again.png'
+                                        src={buyAgain}
                                     />
                                     <span className='buy-again-message'>
                                         Add to Cart
@@ -72,7 +77,7 @@ export default function OrdersPage() {
                             </div>
 
                             <div className='product-image-container'>
-                                <img src='images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg' />
+                                <img src={adultsPlainCotton2} />
                             </div>
 
                             <div className='product-details'>
@@ -88,7 +93,7 @@ export default function OrdersPage() {
                                 <button className='buy-again-button button-primary'>
                                     <img
                                         className='buy-again-icon'
-                                        src='images/icons/buy-again.png'
+                                        src={buyAgain}
                                     />
                                     <span className='buy-again-message'>
                                         Add to Cart
@@ -133,7 +138,7 @@ export default function OrdersPage() {
 
                         <div className='order-details-grid'>
                             <div className='product-image-container'>
-                                <img src='images/products/intermediate-composite-basketball.jpg' />
+                                <img src={interCompoBaseball} />
                             </div>
 
                             <div className='product-details'>
@@ -149,7 +154,7 @@ export default function OrdersPage() {
                                 <button className='buy-again-button button-primary'>
                                     <img
                                         className='buy-again-icon'
-                                        src='images/icons/buy-again.png'
+                                        src={buyAgain}
                                     />
                                     <span className='buy-again-message'>
                                         Add to Cart

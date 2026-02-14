@@ -1,9 +1,12 @@
 import CheckoutHeader from './CheckoutHeader';
 import './CheckoutPage.css';
+import cottonSocks from '../../assets/images/products/athletic-cotton-socks-6-pairs.jpg';
+import basketballSet from '../../assets/images/products/intermediate-composite-basketball.jpg';
 
 export default function CheckoutPage() {
     return (
         <>
+            <link rel='icon' type='image/svg+xml' href='/cart-favicon.png' />
             <title>Checkout</title>
             <CheckoutHeader />
             <div className='checkout-page'>
@@ -19,7 +22,7 @@ export default function CheckoutPage() {
                             <div className='cart-item-details-grid'>
                                 <img
                                     className='product-image'
-                                    src='images/products/athletic-cotton-socks-6-pairs.jpg'
+                                    src={cottonSocks}
                                 />
 
                                 <div className='cart-item-details'>
@@ -106,7 +109,7 @@ export default function CheckoutPage() {
                             <div className='cart-item-details-grid'>
                                 <img
                                     className='product-image'
-                                    src='images/products/intermediate-composite-basketball.jpg'
+                                    src={basketballSet}
                                 />
 
                                 <div className='cart-item-details'>
